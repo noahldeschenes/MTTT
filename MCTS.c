@@ -7,7 +7,7 @@
 #include "node_utils.h"
 #include "board_utils.h"
 
-#define TOTAL_WAIT_SECONDS 30
+#define MAX_SIMULATIONS 1000000
 
 
 struct Node *selection(struct Node *root){
@@ -93,16 +93,19 @@ int best_move(LargeBoard *board, Player current_player, int SB_index){
     struct Node *root = create_node(board, current_player, SB_index, NULL);
     if (root->winner != NO_PLAYER) return -1;
 
-    time_t start_time = time(NULL);
     struct Node *selected_node;
     LargeBoard *simulation_board = malloc(sizeof(LargeBoard));
+    time_t start_time = time(NULL);
 
-    while (time(NULL)-start_time < TOTAL_WAIT_SECONDS){
+    while (root->total_simulations < MAX_SIMULATIONS){
         selected_node = selection(root);
         memcpy(simulation_board, selected_node->board, sizeof(LargeBoard));
         Player winner = simulate(simulation_board, current_player, selected_node->SB_index);
         backpropagate(selected_node, winner);
     }
+
+    printf("seconds: %ld\n", time(NULL)-start_time);
+
 
     iterate_through_root_children(root);
 

@@ -86,43 +86,6 @@ char *LB_to_string(LargeBoard *board){
     return return_string;
 }
 
-/*
-Player check_line(SmallBoard board, int i1, int i2, int i3) {
-    // player only wins a line if they get all 3 indicies, NO_PLAYER otherwise
-    if (board[i1] == NO_PLAYER || board[i1] == TIE) return NO_PLAYER;
-    if (board[i1] == board[i2] && board[i2] == board[i3]) return board[i1];
-    return NO_PLAYER;
-}
-
-Player determine_SB_winner(SmallBoard board){
-    Player results[8];
-    // vertical lines
-    results[0] = check_line(board, 0, 3, 6);
-    results[1] = check_line(board, 1, 4, 7);
-    results[2] = check_line(board, 2, 5, 8);
-    // horizontal lines
-    results[3] = check_line(board, 0, 1, 2);
-    results[4] = check_line(board, 3, 4, 5);
-    results[5] = check_line(board, 6, 7, 8);
-    // diagonals
-    results[6] = check_line(board, 0, 4, 8);
-    results[7] = check_line(board, 6, 4, 2);
-    
-    // check to see if any lines win
-    for (int i=0; i<8; i++){
-        if (results[i] != NO_PLAYER) return results[i];
-    }
-
-    // check if any NO_PLAYER squares are left
-    for (int i=0; i<GRIDSIZE; i++){
-        if (board[i] == NO_PLAYER) return NO_PLAYER;
-    }
-    
-    return TIE;
-
-}
-*/
-
 Player determine_SB_winner(SmallBoard board){
     if (board[4] != NO_PLAYER && board[4] != TIE){ 
         if (board[0] == board[4] && board[4] == board[8]) return board[4];
@@ -185,8 +148,9 @@ int valid_move_no(LargeBoard *board, int SB_index){
     int count = 0;
 
     for (int i=min; i<max; i++){
+        if (determine_SB_winner((*board)[i]) != NO_PLAYER) continue;
         for (int j=0; j<GRIDSIZE; j++){
-            if (valid_move(board, i, j)) count++;
+            if ((*board)[i][j] == NO_PLAYER) count++;
         }
     }
 
@@ -194,8 +158,6 @@ int valid_move_no(LargeBoard *board, int SB_index){
 }
 
 int make_random_move(LargeBoard *board, int SB_index, Player p){
-    assert(valid_move_no(board, SB_index) != 0);
-    
     int index = (rand() % valid_move_no(board, SB_index));
     
     int min, max;
@@ -209,18 +171,19 @@ int make_random_move(LargeBoard *board, int SB_index, Player p){
     }
 
     for (int i=min; i<max; i++){
+
+        if (determine_SB_winner((*board)[i]) != NO_PLAYER) continue;
+
         for (int j=0; j<GRIDSIZE; j++){
-            if (valid_move(board, i, j)){
-                if (index == 0) {
-                    play_move(board, i, j, p); 
+            if ((*board)[i][j] == NO_PLAYER){
+                if (index > 0) index--;
+                else {
+                    play_move(board, i, j, p);
                     if (determine_SB_winner((*board)[j]) == NO_PLAYER) return j;
                     else return -1;
                 }
-                else index--;
             }
         }
     }
+
 }
-
-
-
