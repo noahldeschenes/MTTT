@@ -3,11 +3,12 @@
 #include <time.h>
 #include <assert.h>
 #include <string.h>
+#include <math.h>
 
 #include "node_utils.h"
 #include "board_utils.h"
 
-#define MAX_SIMULATIONS 1000000
+#define MAX_SIMULATIONS 2000000
 
 
 struct Node *selection(struct Node *root){
@@ -47,22 +48,13 @@ int iterate_through_root_children(struct Node *root){
 
     for (int i=0; i<root->child_arr_size; i++){
         double cur_wr = root->child_arr[i]->total_wins/root->child_arr[i]->total_simulations;
-        printf("%d: %f\n", i, cur_wr);
+        printf("%d: %d\n", i, root->child_arr[i]->total_simulations);
         if (best_wr >= cur_wr) continue;
         best_wr = cur_wr;
         best_wr_child = root->child_arr[i];
     }
-
-    double wr0 = root->child_arr[0]->total_wins/root->child_arr[0]->total_simulations;
-    double wr2 = root->child_arr[2]->total_wins/root->child_arr[2]->total_simulations;
-    double wr3 = root->child_arr[3]->total_wins/root->child_arr[3]->total_simulations;
-    double wr5 = root->child_arr[5]->total_wins/root->child_arr[5]->total_simulations;
-    double wr6 = root->child_arr[6]->total_wins/root->child_arr[6]->total_simulations;
-    double wr8 = root->child_arr[8]->total_wins/root->child_arr[8]->total_simulations;
-
-    printf("%f\n", wr0-wr2);
-    printf("%f\n", wr3-wr5);
-    printf("%f\n", wr6-wr8);
+ 
+    printf("wr: %f\n", root->total_wins/root->total_simulations);
     return -1;
 }
 
@@ -89,6 +81,8 @@ int best_move(LargeBoard *board, Player current_player, int SB_index){
     more unit tests for utils though, first
 
     */
+
+    srand(time(NULL));
 
     struct Node *root = create_node(board, current_player, SB_index, NULL);
     if (root->winner != NO_PLAYER) return -1;

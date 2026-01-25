@@ -101,19 +101,19 @@ int main(int argc, char **argv){
     //printf("\n--------------------------------------\n");
     //valid_move_no_tests();
     char str[] = 
-    ".........\n"
-    ".........\n"
-    ".........\n"
-    ".........\n"
-    "....X....\n"
-    "....O....\n"
-    ".........\n"
-    ".........\n"
-    ".........\n";
+    "..X....XO\n"
+    "...O.O.X.\n"
+    "..OX..O..\n"
+    ".OOO....X\n"
+    "X...X.O.X\n"
+    ".X.O.....\n"
+    "XX.......\n"
+    "...X..O.O\n"
+    "O.X.O...X\n";
 
     LargeBoard *lb = string_to_LB(str);
 
-    best_move(lb, PLAYER2, 7);
+    best_move(lb, PLAYER1, 3);
 
 }
 

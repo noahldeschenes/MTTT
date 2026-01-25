@@ -15,7 +15,7 @@ double upper_confidence_bound(struct Node *node){
 
     if (node->total_simulations == 0) return DBL_MAX;
 
-    double exploitation = node->total_wins / (double) node->total_simulations;
+    double exploitation = 1 - node->total_wins / (double) node->total_simulations;
     double exploration = log(node->parent->total_simulations) / (double) node->total_simulations;
 
     return exploitation + (C * sqrt(exploration));
@@ -61,6 +61,8 @@ void init_children(struct Node *node){
     // could use refactoring
 
     // switch current player 
+    if (node->winner != NO_PLAYER) return;
+
     Player cp;
     if (node->current_player == PLAYER1) cp = PLAYER2;
     else cp = PLAYER1;
@@ -93,7 +95,7 @@ void init_children(struct Node *node){
             // updating the board for the child
             LargeBoard *new_board = malloc(sizeof(LargeBoard));
             memcpy(new_board, node->board, sizeof(LargeBoard));
-            play_move(new_board, i, j, cp);
+            play_move(new_board, i, j, node->current_player);
             
             
             // if the SB that the player sends the opponent to is
