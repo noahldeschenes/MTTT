@@ -8,7 +8,7 @@
 #include "node_utils.h"
 #include "board_utils.h"
 
-#define MAX_SIMULATIONS 2000000
+#define MAX_SIMULATIONS 1000000
 
 
 struct Node *selection(struct Node *root){
@@ -79,6 +79,21 @@ int best_move(LargeBoard *board, Player current_player, int SB_index){
     also, need to make a free_MCTS_tree function and free other things
 
     more unit tests for utils though, first
+
+
+    Gonna change the boards to bitboards to save space
+
+    One easy change is to have a "winner" SB to model the
+    winners of the SBs of a LB, and modulate it a fur et a mesure.
+    Checking if the LB has a winner would take ~1/5th of the time,
+    and you could give the winner SB to the move number checker
+    to speed that up too. Wouldn't have to check for SB winners,
+    so it would be pretty much instantaneous. 
+
+    Only other bottleneck after that is that my memory usage is way too
+    high. Node struct is currently 8+81 words; could get it down to
+    ~18 with bitboards.
+
 
     */
 

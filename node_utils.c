@@ -126,4 +126,3 @@ void free_tree(struct Node *root){
     free(root);
 }
 
-

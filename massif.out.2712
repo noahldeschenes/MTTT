@@ -1,0 +1,889 @@
+desc: (none)
+cmd: ./tests
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=20325652
+mem_heap_B=183640
+mem_heap_extra_B=12336
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=52633372
+mem_heap_B=317212
+mem_heap_extra_B=22372
+mem_stacks_B=0
+heap_tree=detailed
+n5: 317212 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 243324 0x10A599: init_children (node_utils.c:96)
+  n2: 243324 0x10A732: selection (MCTS.c:16)
+   n2: 240408 0x10A746: selection (MCTS.c:17)
+    n1: 215136 0x10A746: selection (MCTS.c:17)
+     n1: 215136 0x10AA4B: best_move (MCTS.c:99)
+      n0: 215136 0x10980E: main (unit_tests.c:116)
+    n1: 25272 0x10AA4B: best_move (MCTS.c:99)
+     n0: 25272 0x10980E: main (unit_tests.c:116)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 48128 0x10A427: create_node (node_utils.c:43)
+  n1: 48064 0x10A630: init_children (node_utils.c:109)
+   n2: 48064 0x10A732: selection (MCTS.c:16)
+    n2: 47488 0x10A746: selection (MCTS.c:17)
+     n1: 42496 0x10A746: selection (MCTS.c:17)
+      n1: 42496 0x10AA4B: best_move (MCTS.c:99)
+       n0: 42496 0x10980E: main (unit_tests.c:116)
+     n1: 4992 0x10AA4B: best_move (MCTS.c:99)
+      n0: 4992 0x10980E: main (unit_tests.c:116)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 19040 0x4A66C82: monstartup (gmon.c:153)
+  n1: 19040 0x109280: __gmon_start__ (in /mnt/c/Users/noahl/OneDrive/Work/C programs/MTTT/tests)
+   n1: 19040 0x4846015: ??? (in /usr/libexec/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 19040 0x4000D57: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+     n1: 19040 0x4006439: call_init.part.0 (dl-init.c:56)
+      n1: 19040 0x40065F8: call_init (dl-init.c:33)
+       n1: 19040 0x40065F8: _dl_init (dl-init.c:84)
+        n0: 19040 0x40202C9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 6072 0x10A514: init_children (node_utils.c:73)
+  n2: 6072 0x10A732: selection (MCTS.c:16)
+   n2: 6000 0x10A746: selection (MCTS.c:17)
+    n1: 5376 0x10A746: selection (MCTS.c:17)
+     n1: 5376 0x10AA4B: best_move (MCTS.c:99)
+      n0: 5376 0x10980E: main (unit_tests.c:116)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 648 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=87784718
+mem_heap_B=381372
+mem_heap_extra_B=27180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=120865407
+mem_heap_B=644640
+mem_heap_extra_B=46896
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=139070947
+mem_heap_B=868056
+mem_heap_extra_B=63656
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=166810796
+mem_heap_B=1203848
+mem_heap_extra_B=88760
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=192459903
+mem_heap_B=1497292
+mem_heap_extra_B=110764
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=212652899
+mem_heap_B=1664412
+mem_heap_extra_B=123260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=238938802
+mem_heap_B=1933692
+mem_heap_extra_B=143404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=267155059
+mem_heap_B=2102388
+mem_heap_extra_B=156036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=283201893
+mem_heap_B=2140008
+mem_heap_extra_B=158856
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=312236806
+mem_heap_B=2230692
+mem_heap_extra_B=165636
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=344378975
+mem_heap_B=2343552
+mem_heap_extra_B=174080
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2343552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1901232 0x10A599: init_children (node_utils.c:96)
+  n2: 1901232 0x10A732: selection (MCTS.c:16)
+   n2: 1898316 0x10A746: selection (MCTS.c:17)
+    n2: 1873044 0x10A746: selection (MCTS.c:17)
+     n2: 1655316 0x10A746: selection (MCTS.c:17)
+      n1: 1652400 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1652400 0x10980E: main (unit_tests.c:116)
+      n0: 2916 in 1 place, below massif's threshold (1.00%)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n1: 25272 0x10AA4B: best_move (MCTS.c:99)
+     n0: 25272 0x10980E: main (unit_tests.c:116)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 375616 0x10A427: create_node (node_utils.c:43)
+  n1: 375552 0x10A630: init_children (node_utils.c:109)
+   n2: 375552 0x10A732: selection (MCTS.c:16)
+    n2: 374976 0x10A746: selection (MCTS.c:17)
+     n2: 369984 0x10A746: selection (MCTS.c:17)
+      n2: 326976 0x10A746: selection (MCTS.c:17)
+       n1: 326400 0x10AA4B: best_move (MCTS.c:99)
+        n0: 326400 0x10980E: main (unit_tests.c:116)
+       n0: 576 in 1 place, below massif's threshold (1.00%)
+      n1: 43008 0x10AA4B: best_move (MCTS.c:99)
+       n0: 43008 0x10980E: main (unit_tests.c:116)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 47016 0x10A514: init_children (node_utils.c:73)
+  n2: 47016 0x10A732: selection (MCTS.c:16)
+   n2: 46944 0x10A746: selection (MCTS.c:17)
+    n2: 46320 0x10A746: selection (MCTS.c:17)
+     n2: 40944 0x10A746: selection (MCTS.c:17)
+      n1: 40872 0x10AA4B: best_move (MCTS.c:99)
+       n0: 40872 0x10980E: main (unit_tests.c:116)
+      n0: 72 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=374491810
+mem_heap_B=2406516
+mem_heap_extra_B=178788
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=395639248
+mem_heap_B=2427108
+mem_heap_extra_B=180324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=425773641
+mem_heap_B=2493636
+mem_heap_extra_B=185316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=452547183
+mem_heap_B=2511060
+mem_heap_extra_B=186620
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=478462209
+mem_heap_B=2556600
+mem_heap_extra_B=190032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=513945465
+mem_heap_B=2611248
+mem_heap_extra_B=194120
+mem_stacks_B=0
+heap_tree=detailed
+n4: 2611248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2120256 0x10A599: init_children (node_utils.c:96)
+  n2: 2120256 0x10A732: selection (MCTS.c:16)
+   n2: 2117340 0x10A746: selection (MCTS.c:17)
+    n2: 2092068 0x10A746: selection (MCTS.c:17)
+     n2: 1874340 0x10A746: selection (MCTS.c:17)
+      n1: 1808892 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1808892 0x10980E: main (unit_tests.c:116)
+      n1: 65448 0x10A746: selection (MCTS.c:17)
+       n1: 65448 0x10AA4B: best_move (MCTS.c:99)
+        n0: 65448 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 418880 0x10A427: create_node (node_utils.c:43)
+  n1: 418816 0x10A630: init_children (node_utils.c:109)
+   n2: 418816 0x10A732: selection (MCTS.c:16)
+    n2: 418240 0x10A746: selection (MCTS.c:17)
+     n2: 413248 0x10A746: selection (MCTS.c:17)
+      n2: 370240 0x10A746: selection (MCTS.c:17)
+       n1: 357312 0x10AA4B: best_move (MCTS.c:99)
+        n0: 357312 0x10980E: main (unit_tests.c:116)
+       n0: 12928 in 1 place, below massif's threshold (1.00%)
+      n1: 43008 0x10AA4B: best_move (MCTS.c:99)
+       n0: 43008 0x10980E: main (unit_tests.c:116)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 52424 0x10A514: init_children (node_utils.c:73)
+  n2: 52424 0x10A732: selection (MCTS.c:16)
+   n2: 52352 0x10A746: selection (MCTS.c:17)
+    n2: 51728 0x10A746: selection (MCTS.c:17)
+     n2: 46352 0x10A746: selection (MCTS.c:17)
+      n1: 44664 0x10AA4B: best_move (MCTS.c:99)
+       n0: 44664 0x10980E: main (unit_tests.c:116)
+      n0: 1688 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=542036666
+mem_heap_B=2665896
+mem_heap_extra_B=198208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=579324283
+mem_heap_B=2769252
+mem_heap_extra_B=205948
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=606203682
+mem_heap_B=2813604
+mem_heap_extra_B=209284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=620634241
+mem_heap_B=2867064
+mem_heap_extra_B=213280
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=648265430
+mem_heap_B=2957352
+mem_heap_extra_B=220072
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=685650751
+mem_heap_B=3066252
+mem_heap_extra_B=228228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=705965106
+mem_heap_B=3187428
+mem_heap_extra_B=237308
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=738842786
+mem_heap_B=3394924
+mem_heap_extra_B=252860
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3394924 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2761452 0x10A599: init_children (node_utils.c:96)
+  n2: 2761452 0x10A732: selection (MCTS.c:16)
+   n2: 2758536 0x10A746: selection (MCTS.c:17)
+    n2: 2733264 0x10A746: selection (MCTS.c:17)
+     n2: 2515536 0x10A746: selection (MCTS.c:17)
+      n1: 1850688 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1850688 0x10980E: main (unit_tests.c:116)
+      n1: 664848 0x10A746: selection (MCTS.c:17)
+       n1: 664848 0x10AA4B: best_move (MCTS.c:99)
+        n0: 664848 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 545536 0x10A427: create_node (node_utils.c:43)
+  n1: 545472 0x10A630: init_children (node_utils.c:109)
+   n2: 545472 0x10A732: selection (MCTS.c:16)
+    n2: 544896 0x10A746: selection (MCTS.c:17)
+     n2: 539904 0x10A746: selection (MCTS.c:17)
+      n2: 496896 0x10A746: selection (MCTS.c:17)
+       n1: 365568 0x10AA4B: best_move (MCTS.c:99)
+        n0: 365568 0x10980E: main (unit_tests.c:116)
+       n1: 131328 0x10A746: selection (MCTS.c:17)
+        n1: 131328 0x10AA4B: best_move (MCTS.c:99)
+         n0: 131328 0x10980E: main (unit_tests.c:116)
+      n1: 43008 0x10AA4B: best_move (MCTS.c:99)
+       n0: 43008 0x10980E: main (unit_tests.c:116)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 68248 0x10A514: init_children (node_utils.c:73)
+  n2: 68248 0x10A732: selection (MCTS.c:16)
+   n2: 68176 0x10A746: selection (MCTS.c:17)
+    n2: 67552 0x10A746: selection (MCTS.c:17)
+     n2: 62176 0x10A746: selection (MCTS.c:17)
+      n1: 45696 0x10AA4B: best_move (MCTS.c:99)
+       n0: 45696 0x10980E: main (unit_tests.c:116)
+      n0: 16480 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=774921457
+mem_heap_B=3664988
+mem_heap_extra_B=273036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=808734158
+mem_heap_B=3912108
+mem_heap_extra_B=291524
+mem_stacks_B=0
+heap_tree=detailed
+n4: 3912108 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3184596 0x10A599: init_children (node_utils.c:96)
+  n2: 3184596 0x10A732: selection (MCTS.c:16)
+   n2: 3181680 0x10A746: selection (MCTS.c:17)
+    n2: 3156408 0x10A746: selection (MCTS.c:17)
+     n2: 2938680 0x10A746: selection (MCTS.c:17)
+      n1: 1850688 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1850688 0x10980E: main (unit_tests.c:116)
+      n1: 1087992 0x10A746: selection (MCTS.c:17)
+       n1: 1087992 0x10AA4B: best_move (MCTS.c:99)
+        n0: 1087992 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 629120 0x10A427: create_node (node_utils.c:43)
+  n1: 629056 0x10A630: init_children (node_utils.c:109)
+   n2: 629056 0x10A732: selection (MCTS.c:16)
+    n2: 628480 0x10A746: selection (MCTS.c:17)
+     n2: 623488 0x10A746: selection (MCTS.c:17)
+      n2: 580480 0x10A746: selection (MCTS.c:17)
+       n1: 365568 0x10AA4B: best_move (MCTS.c:99)
+        n0: 365568 0x10980E: main (unit_tests.c:116)
+       n1: 214912 0x10A746: selection (MCTS.c:17)
+        n1: 214912 0x10AA4B: best_move (MCTS.c:99)
+         n0: 214912 0x10980E: main (unit_tests.c:116)
+      n1: 43008 0x10AA4B: best_move (MCTS.c:99)
+       n0: 43008 0x10980E: main (unit_tests.c:116)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 78704 0x10A514: init_children (node_utils.c:73)
+  n2: 78704 0x10A732: selection (MCTS.c:16)
+   n2: 78632 0x10A746: selection (MCTS.c:17)
+    n2: 78008 0x10A746: selection (MCTS.c:17)
+     n2: 72632 0x10A746: selection (MCTS.c:17)
+      n1: 45696 0x10AA4B: best_move (MCTS.c:99)
+       n0: 45696 0x10980E: main (unit_tests.c:116)
+      n0: 26936 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=828361540
+mem_heap_B=4103256
+mem_heap_extra_B=305824
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=855130666
+mem_heap_B=4341364
+mem_heap_extra_B=323620
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=884455128
+mem_heap_B=4624908
+mem_heap_extra_B=344860
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=925716893
+mem_heap_B=4973784
+mem_heap_extra_B=370952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=946541643
+mem_heap_B=5184852
+mem_heap_extra_B=386772
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=977592534
+mem_heap_B=5417700
+mem_heap_extra_B=404204
+mem_stacks_B=0
+heap_tree=detailed
+n4: 5417700 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4416444 0x10A599: init_children (node_utils.c:96)
+  n2: 4416444 0x10A732: selection (MCTS.c:16)
+   n2: 4413528 0x10A746: selection (MCTS.c:17)
+    n2: 4388256 0x10A746: selection (MCTS.c:17)
+     n2: 4170528 0x10A746: selection (MCTS.c:17)
+      n1: 2319840 0x10A746: selection (MCTS.c:17)
+       n1: 2319840 0x10AA4B: best_move (MCTS.c:99)
+        n0: 2319840 0x10980E: main (unit_tests.c:116)
+      n1: 1850688 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1850688 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 872448 0x10A427: create_node (node_utils.c:43)
+  n1: 872384 0x10A630: init_children (node_utils.c:109)
+   n2: 872384 0x10A732: selection (MCTS.c:16)
+    n2: 871808 0x10A746: selection (MCTS.c:17)
+     n2: 866816 0x10A746: selection (MCTS.c:17)
+      n2: 823808 0x10A746: selection (MCTS.c:17)
+       n1: 458240 0x10A746: selection (MCTS.c:17)
+        n1: 458240 0x10AA4B: best_move (MCTS.c:99)
+         n0: 458240 0x10980E: main (unit_tests.c:116)
+       n1: 365568 0x10AA4B: best_move (MCTS.c:99)
+        n0: 365568 0x10980E: main (unit_tests.c:116)
+      n0: 43008 in 1 place, below massif's threshold (1.00%)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 109120 0x10A514: init_children (node_utils.c:73)
+  n2: 109120 0x10A732: selection (MCTS.c:16)
+   n2: 109048 0x10A746: selection (MCTS.c:17)
+    n2: 108424 0x10A746: selection (MCTS.c:17)
+     n1: 103048 0x10A746: selection (MCTS.c:17)
+      n0: 103048 in 2 places, all below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=1008273977
+mem_heap_B=5744004
+mem_heap_extra_B=428596
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1040293909
+mem_heap_B=6111476
+mem_heap_extra_B=456116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1071033126
+mem_heap_B=6427896
+mem_heap_extra_B=479728
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1091572455
+mem_heap_B=6650052
+mem_heap_extra_B=496356
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1132055706
+mem_heap_B=7038924
+mem_heap_extra_B=525468
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1152652054
+mem_heap_B=7216720
+mem_heap_extra_B=538744
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1173488079
+mem_heap_B=7421460
+mem_heap_extra_B=554036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1214195861
+mem_heap_B=7845180
+mem_heap_extra_B=585788
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1245034840
+mem_heap_B=8180988
+mem_heap_extra_B=610932
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1265559514
+mem_heap_B=8399580
+mem_heap_extra_B=627284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1296036330
+mem_heap_B=8717560
+mem_heap_extra_B=651000
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1337106576
+mem_heap_B=9147228
+mem_heap_extra_B=683148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1357534017
+mem_heap_B=9294064
+mem_heap_extra_B=694136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1388792117
+mem_heap_B=9633516
+mem_heap_extra_B=719548
+mem_stacks_B=0
+heap_tree=detailed
+n4: 9633516 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7865748 0x10A599: init_children (node_utils.c:96)
+  n2: 7865748 0x10A732: selection (MCTS.c:16)
+   n2: 7862832 0x10A746: selection (MCTS.c:17)
+    n2: 7837560 0x10A746: selection (MCTS.c:17)
+     n2: 7619832 0x10A746: selection (MCTS.c:17)
+      n1: 5769144 0x10A746: selection (MCTS.c:17)
+       n1: 5769144 0x10AA4B: best_move (MCTS.c:99)
+        n0: 5769144 0x10980E: main (unit_tests.c:116)
+      n1: 1850688 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1850688 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 1553792 0x10A427: create_node (node_utils.c:43)
+  n1: 1553728 0x10A630: init_children (node_utils.c:109)
+   n2: 1553728 0x10A732: selection (MCTS.c:16)
+    n2: 1553152 0x10A746: selection (MCTS.c:17)
+     n2: 1548160 0x10A746: selection (MCTS.c:17)
+      n2: 1505152 0x10A746: selection (MCTS.c:17)
+       n1: 1139584 0x10A746: selection (MCTS.c:17)
+        n1: 1139584 0x10AA4B: best_move (MCTS.c:99)
+         n0: 1139584 0x10980E: main (unit_tests.c:116)
+       n1: 365568 0x10AA4B: best_move (MCTS.c:99)
+        n0: 365568 0x10980E: main (unit_tests.c:116)
+      n0: 43008 in 1 place, below massif's threshold (1.00%)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 194288 0x10A514: init_children (node_utils.c:73)
+  n2: 194288 0x10A732: selection (MCTS.c:16)
+   n2: 194216 0x10A746: selection (MCTS.c:17)
+    n2: 193592 0x10A746: selection (MCTS.c:17)
+     n2: 188216 0x10A746: selection (MCTS.c:17)
+      n1: 142520 0x10A746: selection (MCTS.c:17)
+       n1: 142520 0x10AA4B: best_move (MCTS.c:99)
+        n0: 142520 0x10980E: main (unit_tests.c:116)
+      n0: 45696 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=1403485400
+mem_heap_B=9797056
+mem_heap_extra_B=731752
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1417999076
+mem_heap_B=9940408
+mem_heap_extra_B=742456
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1432464944
+mem_heap_B=10086928
+mem_heap_extra_B=753376
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1446907118
+mem_heap_B=10282164
+mem_heap_extra_B=767996
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1461676536
+mem_heap_B=10431052
+mem_heap_extra_B=779140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1476228530
+mem_heap_B=10562928
+mem_heap_extra_B=789040
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1490809553
+mem_heap_B=10727664
+mem_heap_extra_B=801376
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1505849280
+mem_heap_B=10870612
+mem_heap_extra_B=812068
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1520777272
+mem_heap_B=10943468
+mem_heap_extra_B=817532
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1535243173
+mem_heap_B=11077712
+mem_heap_extra_B=827576
+mem_stacks_B=0
+heap_tree=detailed
+n4: 11077712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 9047376 0x10A599: init_children (node_utils.c:96)
+  n2: 9047376 0x10A732: selection (MCTS.c:16)
+   n2: 9044460 0x10A746: selection (MCTS.c:17)
+    n2: 9019188 0x10A746: selection (MCTS.c:17)
+     n2: 8801460 0x10A746: selection (MCTS.c:17)
+      n1: 6950772 0x10A746: selection (MCTS.c:17)
+       n1: 6950772 0x10AA4B: best_move (MCTS.c:99)
+        n0: 6950772 0x10980E: main (unit_tests.c:116)
+      n1: 1850688 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1850688 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 1787200 0x10A427: create_node (node_utils.c:43)
+  n1: 1787136 0x10A630: init_children (node_utils.c:109)
+   n2: 1787136 0x10A732: selection (MCTS.c:16)
+    n2: 1786560 0x10A746: selection (MCTS.c:17)
+     n2: 1781568 0x10A746: selection (MCTS.c:17)
+      n2: 1738560 0x10A746: selection (MCTS.c:17)
+       n1: 1372992 0x10A746: selection (MCTS.c:17)
+        n1: 1372992 0x10AA4B: best_move (MCTS.c:99)
+         n0: 1372992 0x10980E: main (unit_tests.c:116)
+       n1: 365568 0x10AA4B: best_move (MCTS.c:99)
+        n0: 365568 0x10980E: main (unit_tests.c:116)
+      n0: 43008 in 1 place, below massif's threshold (1.00%)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 223448 0x10A514: init_children (node_utils.c:73)
+  n2: 223448 0x10A732: selection (MCTS.c:16)
+   n2: 223376 0x10A746: selection (MCTS.c:17)
+    n2: 222752 0x10A746: selection (MCTS.c:17)
+     n2: 217376 0x10A746: selection (MCTS.c:17)
+      n1: 171680 0x10A746: selection (MCTS.c:17)
+       n1: 171680 0x10AA4B: best_move (MCTS.c:99)
+        n0: 171680 0x10980E: main (unit_tests.c:116)
+      n0: 45696 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 19688 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=1549757084
+mem_heap_B=11203252
+mem_heap_extra_B=836964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1564210431
+mem_heap_B=11313736
+mem_heap_extra_B=845184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1579193837
+mem_heap_B=11431752
+mem_heap_extra_B=853992
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1589811488
+mem_heap_B=11523388
+mem_heap_extra_B=860748
+mem_stacks_B=0
+heap_tree=peak
+n4: 11523388 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 9411228 0x10A599: init_children (node_utils.c:96)
+  n2: 9411228 0x10A732: selection (MCTS.c:16)
+   n2: 9408312 0x10A746: selection (MCTS.c:17)
+    n2: 9383040 0x10A746: selection (MCTS.c:17)
+     n2: 9165312 0x10A746: selection (MCTS.c:17)
+      n1: 7314624 0x10A746: selection (MCTS.c:17)
+       n1: 7314624 0x10AA4B: best_move (MCTS.c:99)
+        n0: 7314624 0x10980E: main (unit_tests.c:116)
+      n1: 1850688 0x10AA4B: best_move (MCTS.c:99)
+       n0: 1850688 0x10980E: main (unit_tests.c:116)
+     n1: 217728 0x10AA4B: best_move (MCTS.c:99)
+      n0: 217728 0x10980E: main (unit_tests.c:116)
+    n0: 25272 in 1 place, below massif's threshold (1.00%)
+   n0: 2916 in 1 place, below massif's threshold (1.00%)
+ n2: 1859072 0x10A427: create_node (node_utils.c:43)
+  n1: 1859008 0x10A630: init_children (node_utils.c:109)
+   n2: 1859008 0x10A732: selection (MCTS.c:16)
+    n2: 1858432 0x10A746: selection (MCTS.c:17)
+     n2: 1853440 0x10A746: selection (MCTS.c:17)
+      n2: 1810432 0x10A746: selection (MCTS.c:17)
+       n1: 1444864 0x10A746: selection (MCTS.c:17)
+        n1: 1444864 0x10AA4B: best_move (MCTS.c:99)
+         n0: 1444864 0x10980E: main (unit_tests.c:116)
+       n1: 365568 0x10AA4B: best_move (MCTS.c:99)
+        n0: 365568 0x10980E: main (unit_tests.c:116)
+      n0: 43008 in 1 place, below massif's threshold (1.00%)
+     n0: 4992 in 1 place, below massif's threshold (1.00%)
+    n0: 576 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 232376 0x10A514: init_children (node_utils.c:73)
+  n2: 232376 0x10A732: selection (MCTS.c:16)
+   n2: 232304 0x10A746: selection (MCTS.c:17)
+    n2: 231680 0x10A746: selection (MCTS.c:17)
+     n2: 226304 0x10A746: selection (MCTS.c:17)
+      n1: 180608 0x10A746: selection (MCTS.c:17)
+       n1: 180608 0x10AA4B: best_move (MCTS.c:99)
+        n0: 180608 0x10980E: main (unit_tests.c:116)
+      n0: 45696 in 1 place, below massif's threshold (1.00%)
+     n0: 5376 in 1 place, below massif's threshold (1.00%)
+    n0: 624 in 1 place, below massif's threshold (1.00%)
+   n0: 72 in 1 place, below massif's threshold (1.00%)
+ n0: 20712 in 4 places, all below massif's threshold (1.00%)
